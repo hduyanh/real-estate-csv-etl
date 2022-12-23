@@ -10,13 +10,10 @@ csv_config = [
 ]
 
 # mysql (target db)
-#database_name = 'real_estate'
 mysql_db_config = {
 
     'host': 'localhost',
     'user': 'root',
     'password': '123456',
-    #'database': database_name,
 }
-
 
