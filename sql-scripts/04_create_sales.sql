@@ -1,3 +1,5 @@
+USE real_estate;
+
 DROP TABLE IF EXISTS sales;
 
 CREATE TABLE sales (

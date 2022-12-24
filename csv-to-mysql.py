@@ -55,7 +55,7 @@ def sales_table(clean_file):
     return rename_sale
 
 
-def main():
+def process():
     file_data = file_reader(CURRENT_FILE_NAME, FILE_SEPERATOR)
     file_info = file_information(file_data)
     save_csv = save_nan_to_csv(file_data)
@@ -68,4 +68,4 @@ def main():
 
 # starting point of file
 if __name__ == '__main__':
-    main()
+    process()

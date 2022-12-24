@@ -1,3 +1,5 @@
+USE real_estate;
+
 DROP TABLE IF EXISTS properties;
 
 CREATE TABLE properties (
