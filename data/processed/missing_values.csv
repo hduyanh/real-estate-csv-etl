@@ -1,0 +1,33 @@
+,ID,Building,Year of sale,Month of sale,Type of property,Property #,Area (ft.),Price,Status,Customer ID,Entity,Name,Surname,Age at time of purchase,Interval,Y,M,D,Gender,Country,State,Purpose,Deal satisfaction,Mortgage,Source
+41,1032,1,2005.0,1.0,Apartment,32,782.25," $215,410.28 ", Sold ,C0015,Individual,Lauryn,Patrick,36,36-45,1969.0,10.0,30.0,F,Belgium,missing data,Home,2.0,No,Agency
+58,2025,2,2007.0,2.0,Apartment,25,927.83," $315,733.15 ", Sold ,C0070,Individual,Aleksandra,Karenina,40,36-45,1967.0,6.0,13.0,F,Russia,missing data,Home,1.0,No,Agency
+64,2005,2,2006.0,9.0,Apartment,5,785.48," $257,183.48 ", Sold ,C0047,Individual,Alejandra,Greer,41,36-45,1965.0,1.0,11.0,F,Denmark,missing data,Investment,1.0,No,Agency
+76,3049,3,2007.0,4.0,Apartment,49,1283.45," $338,181.18 ", Sold ,C0084,Individual,Diego,Mendez,42,36-45,1965.0,5.0,12.0,M,Mexico,missing data,Home,3.0,No,Agency
+114,2003,2,2006.0,12.0,Apartment,3,927.08," $289,727.99 ", Sold ,C0063,Individual,Piotr,Aleksandrov,51,46-55,1955.0,12.0,2.0,M,Russia,missing data,Investment,3.0,No,Agency
+139,3050,3,2006.0,11.0,Apartment,50,977.87," $248,274.31 ", Sold ,C0059,Individual,Elena,Petrova,57,56-65,1949.0,6.0,22.0,F,Russia,missing data,Home,3.0,Yes,Agency
+146,2019,2,2007.0,3.0,Apartment,19,649.8," $177,555.06 ", Sold ,C0079,Individual,Xavier,Faulkner,60,56-65,1947.0,5.0,24.0,M,Canada,missing data,Investment,5.0,No,Website
+147,2021,2,2007.0,4.0,Apartment,21,785.48," $217,748.48 ", Sold ,C0079,Individual,Xavier,Faulkner,60,56-65,1947.0,5.0,24.0,M,Canada,missing data,Investment,5.0,No,Website
+148,2027,2,2007.0,4.0,Apartment,27,785.48," $247,739.44 ", Sold ,C0079,Individual,Xavier,Faulkner,60,56-65,1947.0,5.0,24.0,M,Canada,missing data,Investment,5.0,No,Website
+149,2052,2,2007.0,3.0,Apartment,52,1615.29," $484,458.03 ", Sold ,C0079,Individual,Xavier,Faulkner,60,56-65,1947.0,5.0,24.0,M,Canada,missing data,Investment,5.0,No,Website
+150,3006,3,2007.0,2.0,Apartment,6,1132.06," $356,506.37 ", Sold ,C0079,Individual,Xavier,Faulkner,60,56-65,1947.0,5.0,24.0,M,Canada,missing data,Investment,5.0,No,Website
+151,3044,3,2007.0,3.0,Apartment,44,720.38," $197,869.36 ", Sold ,C0079,Individual,Xavier,Faulkner,60,56-65,1947.0,5.0,24.0,M,Canada,missing data,Investment,5.0,No,Website
+152,4025,4,2007.0,12.0,Apartment,25,733.19," $236,608.95 ", Sold ,C0079,Individual,Xavier,Faulkner,60,56-65,1947.0,5.0,24.0,M,Canada,missing data,Investment,5.0,No,Website
+174,1023,1,2005.0,4.0,Apartment,23,782.25," $261,579.89 ", Sold ,C0021,Individual,Kaylin,Villarreal,73,65+,1932.0,6.0,13.0,F,Russia,missing data,Investment,3.0,No,Website
+178,5052,5,missing data,missing data,Apartment,52,1769.48," $532,877.38 ",missing data,missing data,missing data,missing data,missing data, ,missing data,missing data,missing data,missing data,missing data,missing data,missing data,missing data,missing data,missing data,missing data
+179,1005,1,2004.0,3.0,Office,5,410.71," $117,564.07 ", Sold ,C0001,Firm,Kamd,Co,missing data,missing data,missing data,missing data,missing data,missing data,USA,California,Investment,5.0,No,Agency
+180,1009,1,2004.0,11.0,Office,9,1200.82," $317,196.40 ", Sold ,C0012,Firm,Bridger CAL,Co,missing data,missing data,missing data,missing data,missing data,missing data,USA,Nevada,Investment,5.0,No,Website
+181,1009,1,2004.0,11.0,Office,10,800.96," $264,142.16 ", Sold ,C0012,Firm,Bridger CAL,Co,missing data,missing data,missing data,missing data,missing data,missing data,USA,Nevada,Investment,4.0,No,Website
+182,1011,1,2005.0,9.0,Office,11,827.87," $222,947.21 ", Sold ,C0025,Firm,Abdiel,Co,missing data,missing data,missing data,missing data,missing data,missing data,USA,Nevada,Investment,5.0,Yes,Website
+183,1007,1,2005.0,12.0,Apartment,7,775.69," $250,312.53 ", Sold ,C0029,Firm,Kenyon,Co,missing data,missing data,missing data,missing data,missing data,missing data,USA,Nevada,Investment,1.0,Yes,Website
+184,1008,1,2005.0,12.0,Office,8,775.69," $246,050.40 ", Sold ,C0029,Firm,Kenyon,Co,missing data,missing data,missing data,missing data,missing data,missing data,USA,California,Investment,1.0,Yes,Website
+185,2038,2,2006.0,10.0,Apartment,38,1604.75," $529,317.28 ", Sold ,C0055,Firm,Kylax,Co,missing data,missing data,missing data,missing data,missing data,missing data,USA,California,Investment,5.0,No,Website
+186,2001,2,2004.0,3.0,Apartment,1,587.28," $169,158.29 ", Sold ,C0121,Firm,Esther,Co,missing data,missing data,missing data,missing data,missing data,missing data,USA,California,Home,3.0,Yes,Website
+187,1013,1,2005.0,7.0,Apartment,13,756.21," $206,958.71 ", Sold ,C0174,Firm,Marleez,Co,missing data,missing data,missing data,missing data,missing data,missing data,USA ,California,Investment,5.0,No,Website
+188,1014,1,2005.0,7.0,Apartment,14,743.09," $206,445.42 ", Sold ,C0174,Firm,Marleez,Co,missing data,missing data,missing data,missing data,missing data,missing data,USA ,California,Investment,5.0,No,Website
+189,1019,1,2005.0,7.0,Apartment,19,827.87," $239,341.58 ", Sold ,C0174,Firm,Marleez,Co,missing data,missing data,missing data,missing data,missing data,missing data,USA ,California,Investment,5.0,No,Website
+190,1020,1,2005.0,7.0,Apartment,20,1160.36," $398,903.42 ", Sold ,C0174,Firm,Marleez,Co,missing data,missing data,missing data,missing data,missing data,missing data,USA ,California,Investment,5.0,No,Website
+191,1022,1,2005.0,7.0,Apartment,22,743.09," $210,745.17 ", Sold ,C0174,Firm,Marleez,Co,missing data,missing data,missing data,missing data,missing data,missing data,USA ,California,Investment,5.0,No,Website
+192,1028,1,2005.0,7.0,Apartment,28,1160.36," $331,154.88 ", Sold ,C0174,Firm,Marleez,Co,missing data,missing data,missing data,missing data,missing data,missing data,USA ,California,Investment,5.0,No,Website
+193,1034,1,2005.0,7.0,Apartment,34,625.8," $204,434.68 ", Sold ,C0174,Firm,Marleez,Co,missing data,missing data,missing data,missing data,missing data,missing data,USA ,California,Investment,5.0,No,Website
+194,1037,1,2005.0,7.0,Apartment,37,756.21," $189,194.31 ", Sold ,C0174,Firm,Marleez,Co,missing data,missing data,missing data,missing data,missing data,missing data,USA ,California,Investment,5.0,No,Website
+195,1042,1,2005.0,7.0,Apartment,42,625.8," $204,027.09 ", Sold ,C0174,Firm,Marleez,Co,missing data,missing data,missing data,missing data,missing data,missing data,USA ,California,Investment,5.0,No,Website
