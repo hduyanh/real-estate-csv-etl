@@ -1,5 +1,4 @@
-
-# csv (source)
+"""
 CURRENT_FILE_NAME = 'real_es.csv'
 FILE_SEPERATOR = ','
 csv_config = [
@@ -8,6 +7,7 @@ csv_config = [
         'seperator': 'FILE_SEPERATOR',
     }
 ]
+"""
 
 # mysql (target db)
 mysql_db_config = {

@@ -1,14 +1,9 @@
-import os
+import db_connection_singleton as connect
+
 
 def main():
-    print('starting etl...')
 
-    # establish sql connection 
-    sql_con = exec(open("db_connection.py").read())
-
-    sql_1 = exec(open("sql_process_01.py").read())
-
-
+  connect.main()
 
 
 
