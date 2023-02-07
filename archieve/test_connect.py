@@ -25,14 +25,23 @@ class Database(Singleton):
       self.connection = Database.connection
       self.cursor = Database.cursor
 
-def process():
+class BaseDAO():
+    def __init__(self):
+      # Create an instance of the database pool.
+      self.db = Database()
+      self.db.pool_size =3
+      
+      # For testing purposes lets print out the db
+      print(self.db) 
+
+def process01():
       with Database() as cursor:
-         cursor.execute('CREATE DATABASE IF NOT EXISTS real_estate;')
+        cursor.execute('CREATE DATABASE IF NOT EXISTS real_estate;')
 
 
 def main():
    Database()
-   process()
-   
+   process01()
+
 if __name__ == "__main__":
   main()
