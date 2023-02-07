@@ -1,5 +1,5 @@
 from typing import Dict
-from src.logger import logger
+from archieve.logger import logger
 import mysql.connector as mysql
 import time
 

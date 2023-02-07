@@ -18,7 +18,7 @@ def main():
                 scripts = [
                 'USE real_estate;', 
                 'DROP TABLE IF EXISTS customers;', 
-                'CREATE TABLE customers (customer_id INT, first_name VARCHAR(30), surname VARCHAR(30), gender VARCHAR(30), PRIMARY KEY (customer_id));'
+                'CREATE TABLE customers (customer_id VARCHAR(30), first_name VARCHAR(30), surname VARCHAR(30), gender VARCHAR(30), PRIMARY KEY (customer_id));'
                 ]
                 Singeleton_DB.script_executer(scripts)
                 logger.info(f'Created table successfully: customer')
@@ -26,8 +26,8 @@ def main():
                     scripts = [
                     'USE real_estate;', 
                     'DROP TABLE IF EXISTS properties;', 
-                    'CREATE TABLE properties (property_id INT, building INT, property_type VARCHAR(30), property_tier INT, area VARCHAR(30), property_status VARCHAR(30), square_meter FLOAT(10,2),\
-                    country VARCHAR(30), property_state VARCHAR(30), customer_id INT, PRIMARY KEY (property_id), FOREIGN KEY (customer_id) REFERENCES customers(customer_id));'
+                    'CREATE TABLE properties (property_id VARCHAR(30), building INT, property_type VARCHAR(30), property_tier INT, area VARCHAR(30), property_status VARCHAR(30), square_meter FLOAT(10,2),\
+                    country VARCHAR(30), property_state VARCHAR(30), customer_id VARCHAR(30), PRIMARY KEY (property_id), FOREIGN KEY (customer_id) REFERENCES customers(customer_id));'
                     ]
                     Singeleton_DB.script_executer(scripts)
                     logger.info(f'Created table successfully: properties')
@@ -35,7 +35,7 @@ def main():
                         scripts = [
                         'USE real_estate;', 
                         'DROP TABLE IF EXISTS sales;', 
-                        'CREATE TABLE sales (sales_id INT, year_of_sale YEAR, month_of_sale INT, price INT, deal_status VARCHAR(30), mortgage VARCHAR(30), meter_price FLOAT(10,2), property_id INT, customer_id INT, entity VARCHAR(30), purpose VARCHAR(30),\
+                        'CREATE TABLE sales (sales_id VARCHAR(30), year_of_sale YEAR, month_of_sale INT, price INT, deal_status VARCHAR(30), mortgage VARCHAR(30), meter_price FLOAT(10,2), property_id VARCHAR(30), customer_id VARCHAR(30), entity VARCHAR(30), purpose VARCHAR(30),\
                         age_of_buy INT, interval_time VARCHAR(30), y INT, M INT, D INT, PRIMARY KEY (sales_id), FOREIGN KEY (customer_id) REFERENCES customers(customer_id), FOREIGN KEY (property_id) REFERENCES properties(property_id));'
                         ]
                         Singeleton_DB.script_executer(scripts)

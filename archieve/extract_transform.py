@@ -1,6 +1,9 @@
 import pandas as pd
 from pathlib import Path
 import warnings
+import sys
+sys.path.append(r'D:\Git\real-estate-csv-etl\config')
+from config import engine
 
 warnings.filterwarnings('ignore')
 
@@ -35,13 +38,16 @@ def file_cleaner(file_data):
     df['Price per meter'] = (df['Price'] / df['Square meter']).round(2) # calculate price/meter
     df['Sales ID'] = df['ID'].map(str) + df['Customer ID'] # generate sales ID
     df[['Year of sale', 'Month of sale', 'Y', 'M', 'D']] = df[['Year of sale', 'Month of sale', 'Y', 'M', 'D']].astype(int) # convert to integer
-    return(df)
+    return df
 
 def customers_table(clean_file):
     customer_table = clean_file[['Customer ID', 'Name', 'Surname', 'Gender']]
-    rename_customer = customer_table.rename(columns={"Customer ID": "customer_id","Name": "name","Surname": "surname", "Gender": "gender"})
+    rename_customer = customer_table.rename(columns={"Customer ID": "customer_id","Name": "first_name","Surname": "surname", "Gender": "gender"})
     final_customer_table = rename_customer.drop_duplicates(subset='customer_id', keep='last')
-    return final_customer_table
+    final_customer_table.set_index('customer_id', inplace=True)
+    final_customer_table.to_sql("customers", engine, if_exists = "append")
+#    return final_customer_table
+#print (final_customer_table)
 
 def properties_table(clean_file):
     property_table = clean_file[['ID', 'Building', 'Type of property', 'Property #', 'Area (ft.)', 'Status', 'Square meter', 'Customer ID','Country', 'State']]
@@ -59,12 +65,12 @@ def sales_table(clean_file):
 
 def transform_file():
     file_data = file_reader(CURRENT_FILE_NAME, FILE_SEPERATOR)
-    file_info = file_information(file_data)
-    save_csv = save_nan_to_csv(file_data)
+#    file_info = file_information(file_data)
+#    save_csv = save_nan_to_csv(file_data)
     clean_file = file_cleaner(file_data)
     customers = customers_table(clean_file)
-    property = properties_table(clean_file)
-    sales = sales_table(clean_file)
+#    property = properties_table(clean_file)
+#    sales = sales_table(clean_file)
     
 
 # starting point of file
