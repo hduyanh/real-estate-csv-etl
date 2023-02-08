@@ -1,4 +1,3 @@
 USE real_estate;
 DROP TABLE IF EXISTS sales;
-CREATE TABLE sales (sales_id INT, source VARCHAR(30), year_of_sale YEAR, month_of_sale INT, price INT, deal_status VARCHAR(30), mortgage VARCHAR(30), meter_price FLOAT(10,2), property_id INT, customer_id INT, entity VARCHAR(30), purpose VARCHAR(30),\
- age_of_buy INT, interval_time VARCHAR(30), y INT, M INT, D INT, PRIMARY KEY (sales_id), FOREIGN KEY (customer_id) REFERENCES customers(customer_id), FOREIGN KEY (property_id) REFERENCES properties(property_id));
+CREATE TABLE sales (sales_id VARCHAR(30), source VARCHAR(30), year_of_sale YEAR, month_of_sale INT, price INT, deal_status VARCHAR(30), mortgage VARCHAR(30), meter_price FLOAT(10,2), property_id VARCHAR(30), customer_id VARCHAR(30), entity VARCHAR(30), purpose VARCHAR(30), age_of_buy INT, interval_time VARCHAR(30), y INT, M INT, D INT, PRIMARY KEY (sales_id), FOREIGN KEY (customer_id) REFERENCES customers(customer_id), FOREIGN KEY (property_id) REFERENCES properties(property_id));

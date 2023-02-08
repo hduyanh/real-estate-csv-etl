@@ -4,6 +4,7 @@ from src.mysql_singleton import Singeleton_DB
 from src.extract import *
 from src.transform import *
 from src.load import *
+from src.sql_to_dic import *
 
 
 def main():
@@ -16,9 +17,7 @@ def main():
     pass
 
     try:
-        scripts = [
-        'CREATE DATABASE IF NOT EXISTS real_estate;'
-        ]
+        scripts = create_db()
         Singeleton_DB.script_executer(scripts)
         logger.info('Using real_estate')
     except TypeError as error:
@@ -26,11 +25,7 @@ def main():
     pass
 
     try:
-        scripts = [
-        'USE real_estate;', 
-        'DROP TABLE IF EXISTS customers;', 
-        'CREATE TABLE customers (customer_id VARCHAR(30), first_name VARCHAR(30), surname VARCHAR(30), gender VARCHAR(30), PRIMARY KEY (customer_id));'
-        ]
+        scripts = create_customers()
         Singeleton_DB.script_executer(scripts)
         logger.info(f'Created table successfully: customer')
     except TypeError as error:
@@ -38,12 +33,7 @@ def main():
     pass
 
     try:
-        scripts = [
-        'USE real_estate;', 
-        'DROP TABLE IF EXISTS properties;', 
-        'CREATE TABLE properties (property_id VARCHAR(30), building INT, property_type VARCHAR(30), property_tier INT, area VARCHAR(30), property_status VARCHAR(30), square_meter FLOAT(10,2),\
-        country VARCHAR(30), property_state VARCHAR(30), customer_id VARCHAR(30), PRIMARY KEY (property_id), FOREIGN KEY (customer_id) REFERENCES customers(customer_id));'
-        ]
+        scripts = create_properties()
         Singeleton_DB.script_executer(scripts)
         logger.info(f'Created table successfully: properties')
     except TypeError as error:
@@ -51,12 +41,7 @@ def main():
     pass
 
     try:
-        scripts = [
-        'USE real_estate;', 
-        'DROP TABLE IF EXISTS sales;', 
-        'CREATE TABLE sales (sales_id VARCHAR(30), source VARCHAR(30), year_of_sale YEAR, month_of_sale INT, price INT, deal_status VARCHAR(30), mortgage VARCHAR(30), meter_price FLOAT(10,2), property_id VARCHAR(30), customer_id VARCHAR(30), entity VARCHAR(30), purpose VARCHAR(30),\
-        age_of_buy INT, interval_time VARCHAR(30), y INT, M INT, D INT, PRIMARY KEY (sales_id), FOREIGN KEY (customer_id) REFERENCES customers(customer_id), FOREIGN KEY (property_id) REFERENCES properties(property_id));'
-        ]
+        scripts = create_sales()
         Singeleton_DB.script_executer(scripts)
         logger.info(f'Created table successfully: sales')
     except TypeError as error:
